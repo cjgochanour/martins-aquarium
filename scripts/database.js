@@ -6,6 +6,7 @@ const database = {
             location: "Rainforests",
             length: 600,
             diet: "Tuna",
+            image: "img/catfish.jpg",
         },
         {
             name: "Bigsby",
@@ -13,6 +14,7 @@ const database = {
             location: "Earth",
             length: 40000,
             diet: "Crab, Manwich",
+            image: "img/bass.jpg",
         },
         {
             name: "Littlesly",
@@ -20,6 +22,7 @@ const database = {
             location: "Red Lobster",
             length: 6.4,
             diet: "Java Moss",
+            image: "img/shrimp.png",
         },
         {
             name: "Paul",
@@ -27,6 +30,7 @@ const database = {
             location: "Iceland",
             length: 183,
             diet: "Protein Bars",
+            image: "img/merman.jpg",
         },
 
     ]
