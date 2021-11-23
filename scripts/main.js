@@ -4,6 +4,12 @@ const allFish = getFish();
 
 import { FishList } from "./fish/FishList.js";
 
-const parentHTMLElement = document.querySelector(".fishList");
+const fishListHTML = document.querySelector(".fishList");
 
-parentHTMLElement.innerHTML = FishList();
+import { tipsList } from "./tips/tipsList.js";
+
+const tipsListHTML = document.querySelector(".sidebar");
+
+tipsListHTML.innerHTML = tipsList();
+
+fishListHTML.innerHTML = FishList();

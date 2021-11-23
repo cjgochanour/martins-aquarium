@@ -1,6 +1,7 @@
 const database = {
     fish: [
         {
+            id: 1,
             name: "Mittens",
             species: "Catfish",
             location: "Rainforests",
@@ -9,6 +10,7 @@ const database = {
             image: "img/catfish.jpg",
         },
         {
+            id: 2,
             name: "Bigsby",
             species: "Colossal-Mouth Bass",
             location: "Earth",
@@ -17,6 +19,7 @@ const database = {
             image: "img/bass.jpg",
         },
         {
+            id: 3,
             name: "Littlesly",
             species: "Jumbo Shrimp",
             location: "Red Lobster",
@@ -25,12 +28,35 @@ const database = {
             image: "img/shrimp.png",
         },
         {
+            id: 4,
             name: "Paul",
             species: "Merman",
             location: "Iceland",
             length: 183,
             diet: "Protein Bars",
             image: "img/merman.jpg",
+        },
+    ],
+    tips: [
+        {
+            id: 1,
+            title: "Vaccuum",
+            text: "Be sure to vacuum your tank once a week",
+        },
+        {
+            id: 2,
+            title: "Food",
+            text: "How would you like your dinner served cold? Be sure to heat your fish food for 2 min in the microwave before feeding!",
+        },
+        {
+            id: 3,
+            title: "Exercise",
+            text: "Take your fish on a walk twice a day",
+        },
+        {
+            id: 4,
+            title: "Musical Preference",
+            text: "Fish prefer the low frequency vibrations of artists like Sunn O))) and Run DMC",
         },
     ],
 };
@@ -73,4 +99,8 @@ export const nonHolyFish = () => {
 
 export const getFish = () => {
     return database.fish.map((fish) => ({ ...fish }));
+};
+
+export const getTips = () => {
+    return database.tips.map((tips) => ({ ...tips }));
 };
