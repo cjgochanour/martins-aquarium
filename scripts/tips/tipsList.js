@@ -8,7 +8,7 @@ export const tipsList = () => {
 
     // creates dynamic HTML to be pushed by main.js
     for (const tip of tips) {
-        htmlString += `<section class="sidebar__cards card">
+        htmlString += `<section class="sidebar__cards">
             <div class="tip__title">${tip.title}</div>
             <div class="tip__text">${tip.text}</div>
         </section>`;

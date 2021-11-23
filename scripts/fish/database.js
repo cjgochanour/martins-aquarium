@@ -40,13 +40,13 @@ const database = {
     tips: [
         {
             id: 1,
-            title: "Vaccuum",
+            title: "Vacuum",
             text: "Be sure to vacuum your tank once a week",
         },
         {
             id: 2,
             title: "Food",
-            text: "How would you like your dinner served cold? Be sure to heat your fish food for 2 min in the microwave before feeding!",
+            text: "Be sure to heat your fish food for 2 min in the microwave before feeding",
         },
         {
             id: 3,

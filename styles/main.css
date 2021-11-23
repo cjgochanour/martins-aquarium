@@ -1,7 +1,6 @@
 main {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
 }
 
 header {
@@ -15,7 +14,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 2;
-    flex-basis: 80%;
+    flex-basis: auto;
     flex-direction: column;
     margin: 1em;
 }
@@ -34,7 +33,7 @@ header {
     background-color: orange;
 }
 
-.fish_pic{
+.fish_pic {
     height: 5em;
 }
 
@@ -47,8 +46,8 @@ header {
     margin-bottom: 1em;
 }
 
-.quote__card{
-    border:1px solid black;
+.quote__card {
+    border: 1px solid black;
     background-color: palegreen;
 }
 
@@ -69,12 +68,30 @@ header {
     border: 1px solid black;
     background-color: lightskyblue;
     flex-grow: 1;
+    flex-basis: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .sidebar__cards {
     border: 1px solid black;
     background-color: orange;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip__title {
+    text-decoration: lemonchiffon;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card {
+    margin: 1em;
+    padding: 1em;
 }
