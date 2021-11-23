@@ -41,10 +41,9 @@ export const mostHolyFish = () => {
 
     for (const fish of database.fish) {
         if (fish.length % 3 === 0) {
-            holyFish += fish;
+            holyFish.push(fish);
         }
     }
-
     return holyFish;
 };
 
@@ -53,8 +52,8 @@ export const soldierFish = () => {
     let soldiers = [];
 
     for (const fish of database.fish) {
-        if (fish.length % 5 === 0) {
-            soldiers += fish;
+        if (fish.length % 5 === 0 && fish.length % 3 != 0) {
+            soldiers.push(fish);
         }
     }
     return soldiers;
@@ -66,7 +65,7 @@ export const nonHolyFish = () => {
 
     for (const fish of database.fish) {
         if (fish.length % 3 != 0 && fish.length % 5 != 0) {
-            regularFish += fish;
+            regularFish.push(fish);
         }
     }
     return regularFish;
