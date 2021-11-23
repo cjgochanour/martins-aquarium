@@ -32,31 +32,46 @@ const database = {
             diet: "Protein Bars",
             image: "img/merman.jpg",
         },
-
-    ]
-}
+    ],
+};
 
 export const mostHolyFish = () => {
     // 3, 6, 9, 12, etc... fish
-    const holyFish = []
+    let holyFish = [];
 
-    for () {
-
+    for (const fish of database.fish) {
+        if (fish.length % 3 === 0) {
+            holyFish += fish;
+        }
     }
 
-    return holyFish
-}
+    return holyFish;
+};
 
 export const soldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
-    return soldiers
-}
+    let soldiers = [];
+
+    for (const fish of database.fish) {
+        if (fish.length % 5 === 0) {
+            soldiers += fish;
+        }
+    }
+    return soldiers;
+};
 
 export const nonHolyFish = () => {
     // Any fish not a multiple of 3 or 5
-    return regularFish
-}
+    let regularFish = [];
+
+    for (const fish of database.fish) {
+        if (fish.length % 3 != 0 && fish.length % 5 != 0) {
+            regularFish += fish;
+        }
+    }
+    return regularFish;
+};
 
 export const getFish = () => {
-    return database.fish.map(fish => ({...fish}))
-}
+    return database.fish.map((fish) => ({ ...fish }));
+};

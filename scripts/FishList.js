@@ -1,11 +1,11 @@
 // Import return database function
-import { getFish } from './database.js'
+import { getFish, mostHolyFish, nonHolyFish, soldierFish } from "./database.js";
 
 export const FishList = () => {
-    const fishes = getFish()
+    const fishes = getFish();
 
     // builds a string filled with HTML
-    let htmlString = '<article class="content__fish-list">'
+    let htmlString = '<article class="content__fish-list">';
 
     // creates dynamic HTML to be pushed by main.js
     for (const fish of fishes) {
@@ -16,9 +16,9 @@ export const FishList = () => {
             <div class="fish__length">${fish.length}</div>
             <div class="fish__location">${fish.location}</div>
             <div class="fish__diet">${fish.diet}</div>
-        </section>`
+        </section>`;
     }
-    htmlString += `</article>`
+    htmlString += `</article>`;
 
-    return htmlString
-}
+    return htmlString;
+};
