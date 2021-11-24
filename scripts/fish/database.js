@@ -59,6 +59,32 @@ const database = {
             text: "Fish prefer the low frequency vibrations of artists like Sunn O))) and Run DMC",
         },
     ],
+    locations: [
+        {
+            id: 1,
+            image: "",
+            name: "The Lost City of Atlanta",
+            info: "Did it ever really exist? Science may never know.",
+        },
+        {
+            id: 2,
+            image: "",
+            name: "Bikini Bottom",
+            info: "Home of sponges, squirrels, etc.",
+        },
+        {
+            id: 3,
+            image: "",
+            name: "Specific Ocean",
+            info: "48°52.6′ south, 123°23.6′ west",
+        },
+        {
+            id: 4,
+            image: "",
+            name: "The town watertower",
+            info: "Only the best fish in this town's tap water.",
+        },
+    ],
 };
 
 export const mostHolyFish = () => {
@@ -103,4 +129,8 @@ export const getFish = () => {
 
 export const getTips = () => {
     return database.tips.map((tips) => ({ ...tips }));
+};
+
+export const getLocations = () => {
+    return database.locations.map((locations) => ({ ...locations }));
 };
